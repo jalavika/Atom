@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Atom.Core\Atom.Core.csproj" />
+    <ProjectReference Include="..\Atom.IO\Atom.IO.csproj" />
+    <ProjectReference Include="..\Atom.Memory\Atom.Memory.csproj" />
+    <ProjectReference Include="..\Atom.Protocol\Atom.Protocol.csproj" />
+    <ProjectReference Include="..\Atom.SerDes\Atom.SerDes.csproj" />
+    <ProjectReference Include="..\Atom.Sizeable\Atom.Sizeable.csproj" />
+  </ItemGroup>
+
+</Project>
