@@ -5,6 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Redis\**" />
+    <EmbeddedResource Remove="Redis\**" />
+    <None Remove="Redis\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
     <PackageReference Include="StackExchange.Redis" Version="1.2.3" />
     <PackageReference Include="StackExchange.Redis.Extension" Version="1.2.1" />
@@ -14,10 +20,6 @@
     <ProjectReference Include="..\Atom.Core\Atom.Core.csproj" />
     <ProjectReference Include="..\Atom.IO\Atom.IO.csproj" />
     <ProjectReference Include="..\Atom.Protocol\Atom.Protocol.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Redis\" />
   </ItemGroup>
 
 </Project>

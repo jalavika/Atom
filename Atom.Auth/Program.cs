@@ -1,6 +1,7 @@
 ﻿using System;
 using Atom.Auth.Sockets;
 using Atom.DataCenter.Managers;
+using Atom.DataCenter.Models.D2O.Servers;
 using Atom.SerDes.Managers;
 
 /// <summary>
@@ -16,8 +17,7 @@ namespace Atom.Auth
             var auth = new AuthServer();
 
             D2OManager.Init();
-
-            //D2OManager.DisplayAll<Server>();
+            D2OManager.DisplayAll<Server>();
 
             Console.ReadKey();
         }
